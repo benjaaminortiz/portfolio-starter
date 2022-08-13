@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('./fonts/SFProDisplay/SF-Pro-Display-Regular.otf');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SFProDisplay/SF-Pro-Display-Medium.otf');
+    font-weight: medium;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('./fonts/SFProDisplay/SF-Pro-Display-Semibold.otf');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'SF Pro Text Regular';
+    src: url('./fonts/SFProText/SF-Pro-Text-Regular.otf');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Text';
+    src: url('./fonts/SFProText/SF-Pro-Text-Medium.otf');
+    font-weight: medium;
+  }
+  @font-face {
+    font-family: 'SF Pro Text';
+    src: url('./fonts/SFProText/SF-Pro-Text-Semibold.otf');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'SF Pro Text';
+    src: url('./fonts/SFProText/SF-Pro-Text-Light.otf');
+    font-weight: light;
+  }
+
+  *{
+ margin: 0;
+    font-weight: medium;
+    font-size: 20px;
+  }

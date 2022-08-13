@@ -1,6 +1,6 @@
 :root
 {
-  --yellow: #F5C32C;
+  --teal: #008080;
     --orange : #FCA61F;
     --black : #242D49;
     --gray : #788097;
@@ -12,12 +12,41 @@
 }
 
 .App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
+
+    overflow-x: hidden;
     color: var(--black);    
+}
+.App-dark{
+
+  overflow-x: hidden;
+  color: white;    
+  background-color: black;
 }
 
 
-  
+  .button {
+    border-radius: 11px;
+    border: none;
+    color: white;
+    font-size: 18px; 
+    padding: 11px 26px 11px 26px;
+    background: linear-gradient(350deg, #008080 27%, #66b2b2 100%);
+    font-family: 'SF Pro Text';
+    font-weight: medium;
+    box-shadow: 5px 15px 24px 3px rgba(0, 128, 128, 0.4);
+  }
 
-  
+  .frosted {
+background-color: rgba(255,255,255,0.5);
+backdrop-filter: blur(30px);
+  }
+
+  .frosted-dark{
+    
+background-color: rgba(100,100,100, 0.6)!important;
+backdrop-filter: blur(30px);
+
+  }
+  .frosted-dark *{
+    color: white !important;
+  }

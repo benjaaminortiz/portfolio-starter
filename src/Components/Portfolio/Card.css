@@ -1,0 +1,51 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-height: 600px;
+    box-shadow: 0px 5px 20px 10px rgba(100, 100, 100, 0.4);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 11px;
+    backdrop-filter: blur(30px);
+}
+
+.card-image {
+    border-radius: 11px !important;
+}
+
+.card-image img{
+   max-width: 300px;
+   border-radius: 11px !important;
+  align-self: center;
+   object-fit: fill;
+}
+
+.card-text {
+    color: rgba(0, 0, 0, 0.8);
+    
+}
+ .card-title {
+    font-family: 'SF Pro Display';
+    margin-bottom: 20px;
+    
+ }
+.card-body {
+    font-family: 'SF Pro Text';
+    margin-bottom: 20px;
+
+}  
+
+.card-button {
+   width: 80%;
+ margin-left: 10%;
+ margin-right: 10%;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ align-self: flex-end;
+}
+
+
+

@@ -1,0 +1,38 @@
+.title {
+    font-size: 3rem;
+    font-family: 'SF Pro Display';
+    color: rgba(0, 128, 128, 0.8);
+    padding-left: 3rem;
+}
+.title-dark {
+    font-size: 3rem;
+    font-family: 'SF Pro Display';
+    color: #66b2b2;
+    padding-left: 3rem;
+}
+.pf {
+    background: url('../../img/tealblur.png')  center center ; 
+    -webkit-background-size: center;
+    -moz-background-size: center;
+    -o-background-size: center;
+    background-size: center;
+
+ margin-top: 50px;
+ background-size: contain;
+}
+
+.cards{
+   display: flex;
+   flex-direction: row;
+   gap: 3rem;
+   padding: 3rem;
+   
+   scroll-behavior: smooth;
+}
+
+@media (max-width: 800px){
+.cards {
+    flex-direction: column;
+    align-items: center;
+}
+}

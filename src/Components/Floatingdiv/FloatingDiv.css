@@ -1,0 +1,18 @@
+.floatingdiv {
+justify-content: space-around;
+font-family: 'SF Pro Display';
+display: flex;
+box-shadow: var(--boxShadow);
+border-radius: 15px;
+align-items: center;
+padding: 0px 28px 0px 28px;
+height: 4rem;
+}
+.floatingdiv img {
+margin-right: 14px;
+    max-width: 50px;
+}
+.floatingdiv span {
+    font-size: 16px;
+}
+

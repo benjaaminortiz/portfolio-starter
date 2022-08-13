@@ -1,0 +1,179 @@
+.intro{
+    display: flex;
+    height: auto;
+    margin-top: 6rem;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.intro_left{
+    display: flex;
+    position: relative; 
+    flex: 1;
+    flex-direction: column;
+   margin-left: 3rem;
+   
+}
+
+.intro_right {
+   position: relative;
+    flex:1;
+    overflow-y: visible;
+}
+.intro_right > * {
+    position: absolute ;
+     flex:1;
+     overflow: visible;
+ }
+
+.intro_name{
+    display: flex;
+    flex-direction: column;
+    font-family: 'SF Pro Text';
+
+}
+
+.intro_hi {
+    color:var(--black);
+    font-weight: bold;
+    font-family:'SF Pro Display';
+    font-size: 50px;
+  
+}
+.intro_hi-dark {
+    color: white;
+    font-weight: bold;
+    font-family:'SF Pro Display';
+    font-size: 50px;
+  
+}
+
+.intro_name_title {
+   
+color: var(--teal);
+font-weight: bold;
+font-size: 3rem;
+margin-bottom: 2rem;
+}
+
+.intro_name_title {
+   
+    color: var(--teal);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    }
+
+    
+.intro_name_title-dark {
+   
+    color: #66b2b2;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    }
+.intro_name_text {
+    
+    font-family: 'SF Pro Text Regular';
+    font-weight: light;
+    
+}
+
+.intro_button {
+    width: 9rem;
+    height: 5rem;
+    margin-top: 2rem;
+    
+}
+.intro_icons {
+    margin-top: 6vh;
+    gap:0rem;
+    display: flex;
+}
+.icon {
+   max-block-size: 3rem;
+
+   border-radius: 15px;
+   transition: 150ms;
+   display: flex;
+   
+}
+
+
+
+.icon:hover {
+transform: scale(1.1);
+transition: 150ms;
+box-shadow: 5px 15px 27px 5px rgba(0, 128, 128, 0.3) ;
+}
+
+.icon_button{
+    display: flex;
+    gap: 10px;
+    margin-right: 20%;
+    margin-left: 5%;
+    align-items: center;
+    cursor: pointer;
+    color: #008080;
+    font-weight: bolder;
+}
+
+
+
+
+.principal {
+    width: 550px;
+    display: flex; 
+    z-index: 11;
+}
+
+.blueblob {
+    position: relative; 
+    top: -80px;
+    left: -80px;
+    transform: scale(1);
+}
+
+
+
+.github {
+    border-radius: 50px !important;
+}
+
+.purpleblob {
+    transform: scale(0.4);
+    top: -260px;
+   left : -100px
+
+}
+.pclogo {
+    transform: scale(0.2);
+    top: -250px;
+    left: 250px;
+    z-index: 13;
+}
+
+.brownblob {
+    top: -100px;
+    left: 200px;
+    filter: blur(60px);
+    overflow: hidden;
+}
+.rocket {
+    transform: scale(0.2);
+    top: -100px;
+    left: -200px;
+    z-index: 13;
+}
+
+@media (max-width: 800px){
+    .intro {
+        flex-direction: column-reverse;
+    }
+    .intro_right {
+        align-self: center;
+    }
+    .intro_left {
+        margin-left: 1rem !important;
+    }
+}
