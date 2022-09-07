@@ -7,7 +7,7 @@
    margin-bottom: 50px;
     margin-top: 4rem;
     display: flex;
-    padding: 0 3rem 0 3rem;
+    padding: 0 1rem;
     font-family: 'SF Pro Text';
     background-size: contain;
     justify-content: space-around !important;    
@@ -22,7 +22,7 @@
 }
 .contact-right form {
     display: flex;
-    max-width: 50%;
+    width: fit-content;
     max-height: 85vh;
     flex-direction: column;
     gap: 2rem;
@@ -31,9 +31,35 @@
     border-radius: 11px;
     height: fit-content;
     box-shadow: 0px 5px 30px 10px rgba(100, 100, 100, 0.4);
-
+    box-sizing: content-box;
 }
 .contact-right form textarea{
+    max-width: 95%;
+    min-width: 35%;
+    max-height: 25vh;
+    min-height: 5vh;
+}
+
+.contact-right-dark {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1
+}
+.contact-right-dark form {
+    display: flex;
+    max-width: 50%;
+   
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 60px;
+    border-radius: 11px;
+    height: fit-content;
+    box-shadow: 0px 5px 30px 10px rgba(100, 100, 100, 0.4);
+    box-sizing: content-box;
+}
+.contact-right-dark form textarea{
     max-width: 95%;
     min-width: 35%;
     max-height: 25vh;
@@ -46,12 +72,22 @@
  
     border-radius: 11px;
     box-shadow: 0px 5px 20px 5px rgba(100, 100, 100, 0.4);
-
+ 
 }
+.contact-right-dark * {
+    background-color: black;
+    border: none;
+    padding: 10px;
+ 
+    border-radius: 11px;
+    box-shadow: 0px 5px 20px 5px rgba(100, 100, 100, 0.4);
+ 
+}
+
 .contact-right form span {
     animation: ease-in;
     background-color: #008080;
-    color: white;
+
     
 }
 .contact-right *::placeholder{
@@ -60,11 +96,25 @@
  font-weight: bolder; 
  color: rgba(0, 0, 0, 0.7);
 }
+
+.contact-right-dark form span {
+    animation: ease-in;
+    background-color: #008080;
+
+    
+}
+.contact-right-dark *::placeholder{
+    font-family: 'SF Pro Text';
+   
+ font-weight: bolder; 
+ color: rgba(255, 255, 255, 0.7);
+}
 .title {
-    margin: 25px;
+    position: relative;
+  left: 0px;
 }
 .sub-title {
-    margin: 25px;
+    margin: 3%;
     text-align: center;
     
 }
@@ -72,7 +122,11 @@
     font-size:40px;
 }
 .contact-left{
-    max-width: 40%;
+    max-width: 500%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 @media (max-width: 800px){
     .contact {
@@ -83,4 +137,11 @@
     .contact-left {
         max-width: 100%;
     }
+    .contact-right form{
+        height: max-content;
+    }
+.contact-right textarea {
+    height: 100;
+}
+
     }

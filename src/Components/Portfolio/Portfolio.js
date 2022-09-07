@@ -26,7 +26,7 @@ const Portfolio = () => {
       url: "https://tiktok-ffa29.web.app/",
     },
     {
-      title: "React-Redux  API",
+      title: "React-Redux API",
       text: " Se utilizo una API externa para obtener datos sobre distintos superheroes y Redux para poder agruparlos segun determinadas caracteristicas, utilizando React para estructurar y dar estilo componentes y datos",
       img: Heroapi,
       button: "Ver en Github",

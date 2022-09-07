@@ -4,6 +4,8 @@
     border: 3px solid var(--teal);
     border-radius: 1rem;
     position: relative;
+    height: min-content ;
+
     padding: 2px;
     cursor: pointer;
 }
@@ -22,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     border: 3px solid #66b2b2;
+    height: min-content ;
     border-radius: 1rem;
     position: relative;
     padding: 2px;

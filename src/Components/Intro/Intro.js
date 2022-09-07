@@ -11,7 +11,7 @@ import Purplelight from "../../img/purpleblur.png";
 import Pcicon from "../../img/3DPC.png";
 import Brownlight from "../../img/brownblob.png";
 import Rocket from "../../img/rocket.png";
-
+import BenjaCV from "./benjacv.pdf"
 import { ThemeContext } from "../../Context";
 import { useContext } from "react";
 
@@ -19,7 +19,7 @@ const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
-  return (
+  return (    
     <div className="intro">
       <div className="intro_left">
         <div className="intro_name">
@@ -35,7 +35,7 @@ const Intro = () => {
             Soy un Desarrollador Web Full-Stack con conocimientos de Diseño
             UX/UI y especializado en React + Node
           </span>
-          <button className="button intro_button">Descargar CV</button>
+          <button className="button intro_button" ><a href={BenjaCV} download="Benjamin Ortiz CV.pdf">Descargar CV</a></button>
           <div className="intro_icons">
             <div className="icon_button">
               <a href="https://github.com/benjaaminortiz">
@@ -54,10 +54,11 @@ const Intro = () => {
       </div>
       <div className="intro_right">
         <img src={Principal} alt="principal" className="principal" />
-        <img src={Purplelight} alt="prple" className="purpleblob" />
-        <img src={Bluelight} alt="bluelight" className="blueblob" />
+        <img src={Purplelight} alt="prple" className={darkMode ? "purpleblob-dark" : "purpleblob"} />
+        <img src={Bluelight} alt="bluelight" className={darkMode ? "blueblob-dark" : "blueblob"} />
         <img src={Pcicon} alt="pclogo" className="pclogo" />
-        <img src={Rocket} alt="rocket" className="rocket" />
+        <img
+        src={Rocket} alt="rocket" className="rocket" />
         <img src={Brownlight} alt="blob" className="brownblob" />
         <div
           className="floatingdivs"
@@ -65,7 +66,7 @@ const Intro = () => {
         >
           <FloatingDiv img={Crown} txt1="Full-Stack" txt2="Web Developer" />
         </div>
-        <div style={{ zIndex: "13", top: "325px", left: "350px" }}>
+        <div style={{ zIndex: "13", top: "325px", left: "250px" }}>
           <FloatingDiv
             img={Code3D}
             txt1="React + Node"

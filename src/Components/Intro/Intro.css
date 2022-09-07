@@ -1,9 +1,10 @@
 .intro{
     display: flex;
     height: auto;
-    margin-top: 6rem;
+    padding-top: 7rem;
     gap: 20px;
     flex-direction: row;
+   justify-content: space-between;
 }
 
 .intro_left{
@@ -18,7 +19,9 @@
 .intro_right {
    position: relative;
     flex:1;
-    overflow-y: visible;
+   right: 4rem;
+   max-width: max-content;
+    overflow: visible;
 }
 .intro_right > * {
     position: absolute ;
@@ -72,18 +75,25 @@ margin-bottom: 2rem;
     font-size: 3rem;
     margin-bottom: 2rem;
     }
-.intro_name_text {
-    
+.intro_name_body{
+   width:80%;
     font-family: 'SF Pro Text Regular';
     font-weight: light;
     
 }
 
 .intro_button {
-    width: 9rem;
-    height: 5rem;
+    width: 10rem;
+    height: 3rem;
     margin-top: 2rem;
     
+}
+.intro_button a {
+    font-family: 'SF Pro Text';
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 .intro_icons {
     margin-top: 6vh;
@@ -131,7 +141,14 @@ box-shadow: 5px 15px 27px 5px rgba(0, 128, 128, 0.3) ;
     position: relative; 
     top: -80px;
     left: -80px;
-    transform: scale(1);
+    transform: scale(0.8);
+}
+.blueblob-dark {
+    position: relative; 
+    top: -80px;
+    left: -80px;
+    transform: scale(0.8);
+    filter: brightness(0.5);
 }
 
 
@@ -145,6 +162,12 @@ box-shadow: 5px 15px 27px 5px rgba(0, 128, 128, 0.3) ;
     top: -260px;
    left : -100px
 
+}
+.purpleblob-dark {
+    transform: scale(0.4);
+    top: -260px;
+   left : -100px;
+   filter: brightness(0.5);
 }
 .pclogo {
     transform: scale(0.2);
@@ -172,8 +195,32 @@ box-shadow: 5px 15px 27px 5px rgba(0, 128, 128, 0.3) ;
     }
     .intro_right {
         align-self: center;
+        transform: scale(0.7);
+        height: min-content;
+       
+        right: 0;
+        object-fit: contain;
     }
     .intro_left {
         margin-left: 1rem !important;
+    }.intro_icons{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px){
+    .intro {
+        padding-top: 2rem;
+    }
+    .intro_name_body{
+        width: fit-content;
+    }
+    .intro_right{
+        transform: scale(0.7);
+        padding: 0;
+    }
+    .intro_icons{
+        flex-direction: column;
+        gap: 2rem
     }
 }

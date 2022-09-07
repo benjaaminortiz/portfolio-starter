@@ -12,12 +12,13 @@
 }
 
 .App{
-
-    overflow-x: hidden;
+  scroll-behavior: smooth;
+    transition: 0.7s;
     color: var(--black);    
+    overflow-x: hidden;
 }
 .App-dark{
-
+  transition: 0.7s;
   overflow-x: hidden;
   color: white;    
   background-color: black;
@@ -33,9 +34,20 @@
     background: linear-gradient(350deg, #008080 27%, #66b2b2 100%);
     font-family: 'SF Pro Text';
     font-weight: medium;
+    transition:0.3s;
     box-shadow: 5px 15px 24px 3px rgba(0, 128, 128, 0.4);
   }
 
+
+.button:hover{
+   
+    transform: scale(1.11);
+    box-shadow: 5px 15px 27px 5px rgba(0, 128, 128, 0.3) !important;
+    cursor: pointer;
+    transition:0.3s;
+  
+   
+}
   .frosted {
 background-color: rgba(255,255,255,0.5);
 backdrop-filter: blur(30px);
@@ -50,3 +62,4 @@ backdrop-filter: blur(30px);
   .frosted-dark *{
     color: white !important;
   }
+

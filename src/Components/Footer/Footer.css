@@ -3,6 +3,7 @@
     align-items: center;
     position: relative;
     bottom: 0;
+    
 }
 
 .footer-content {
@@ -10,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     width: 100%;
     color: white;
     margin-top: 200px;

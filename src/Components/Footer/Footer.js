@@ -5,6 +5,9 @@ import Linkedin from "@iconscout/react-unicons/icons/uil-linkedin";
 import Github from "@iconscout/react-unicons/icons/uil-github";
 
 const Footer = () => {
+
+
+  
   return (
     <div className="footer">
       <img
@@ -12,7 +15,8 @@ const Footer = () => {
         alt="footer"
         style={{
           transform: "rotateY(180deg)",
-          backgroundSize: "fill",
+          backgroundSize: "contain",
+          
         }}
       />
       <div className="footer-content">

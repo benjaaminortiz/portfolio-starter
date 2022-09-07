@@ -42,7 +42,7 @@ const Contact = () => {
           <span>Llene el formulario para ponerse en Contacto</span>
         </div>
       </div>
-      <div className="contact-right">
+      <div className={darkMode ? "contact-right-dark" : "contact-right"}>
         <form
           onSubmit={sendEmail}
           ref={form}
