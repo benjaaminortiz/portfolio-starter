@@ -20,7 +20,7 @@ const Intro = () => {
   const darkMode = theme.state.darkMode;
 
   return (    
-    <div className="intro">
+    <div className="intro"  id='#inicio'>
       <div className="intro_left">
         <div className="intro_name">
           <span className={darkMode ? "intro_hi-dark" : "intro_hi"}>

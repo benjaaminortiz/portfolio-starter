@@ -34,11 +34,14 @@ const Navbar = () => {
           
        
        <ul className={hidden ? 'nav-list-hidden' : 'nav-list'}>
-       
-       <li ><a>Inicio</a></li>
-       <li><a >Skills</a></li>
-       <li><a >Proyectos</a></li>
-       <button style={{height: 'fit-content',alignSelf: 'center'}}className="button" >Contacto</button>
+      
+      
+     
+       <li > <Link smooth to='#inicio'><a>Inicio</a></Link></li>
+       <li><Link smooth to='#skills'><a >Skills</a></Link></li>
+       <li> <Link smooth to='#portfolio'><a >Proyectos</a></Link></li>
+             <Link smooth to='#contact'><button style={{height: 'fit-content',alignSelf: 'center'}}className="button" >Contacto</button></Link>
+
 
      </ul>
     </nav>

@@ -13,7 +13,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setDone(true);
     emailjs
       .sendForm(
         "service_sv3o4nf",
@@ -23,7 +23,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setDone(true);
+         
           console.log(result.text);
         },
         (error) => {
@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id='#contact'>
       <div className="contact-left">
         <div>
           <span className={darkMode ? "title-dark" : "title"}>Contacto</span>

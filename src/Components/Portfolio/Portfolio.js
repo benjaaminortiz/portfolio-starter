@@ -35,7 +35,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="pf">
+    <div className="pf" id='#portfolio'>
       <h1 className={darkMode ? "title-dark" : "title"}>Proyectos</h1>
       <div className="cards">
         {data.map((card) => {

@@ -9,7 +9,7 @@ const Skills = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="skills-main">
+    <div className="skills-main" id='#skills'>
       <div
         className={
           darkMode

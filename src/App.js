@@ -6,11 +6,10 @@ import Contact from "./Components/Contact/Contact";
 import Skills from "./Components/Skills/Skills";
 import Footer from "./Components/Footer/Footer";
 import { ThemeContext } from "./Context";
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 
 function App() {
 
-  const skillsRef = useRef();
 
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -24,10 +23,10 @@ function App() {
 }
   return (
     <div className={darkMode ? "App-dark" : "App"}>
-      
+   
       <Navbar />
       <Intro />
-      <Skills ref={skillsRef} />
+      <Skills />
       <Portfolio />
       <Contact />
       

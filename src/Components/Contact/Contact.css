@@ -12,6 +12,7 @@
     background-size: contain;
     justify-content: space-around !important;    
    
+   
 }
 
 .contact-right {
@@ -23,6 +24,7 @@
 .contact-right form {
     display: flex;
     width: fit-content;
+    max-width: 50%;
     max-height: 85vh;
     flex-direction: column;
     gap: 2rem;
@@ -37,6 +39,7 @@
     max-width: 95%;
     min-width: 35%;
     max-height: 25vh;
+    font-size: 13px;
     min-height: 5vh;
 }
 
@@ -63,6 +66,7 @@
     max-width: 95%;
     min-width: 35%;
     max-height: 25vh;
+    font-size: 13px;
     min-height: 5vh;
 }
 .contact-right * {
@@ -78,7 +82,8 @@
     background-color: black;
     border: none;
     padding: 10px;
- 
+   
+
     border-radius: 11px;
     box-shadow: 0px 5px 20px 5px rgba(100, 100, 100, 0.4);
  
@@ -92,21 +97,33 @@
 }
 .contact-right *::placeholder{
     font-family: 'SF Pro Text';
-   
+    font-size: smaller;
  font-weight: bolder; 
+ font-size: 15px;
  color: rgba(0, 0, 0, 0.7);
 }
 
+.contact-right input{
+    font-family: 'SF Pro Text';
+    font-size: 15px;
+width: 95%;
+}
+.contact-right-dark input{
+    font-size: 15px;
+    width: 95%;
+    }
 .contact-right-dark form span {
     animation: ease-in;
     background-color: #008080;
-
+font-size: smaller;
     
 }
 .contact-right-dark *::placeholder{
     font-family: 'SF Pro Text';
-   
+   font-size: smaller;
  font-weight: bolder; 
+ font-size: 15px;
+
  color: rgba(255, 255, 255, 0.7);
 }
 .title {
@@ -139,6 +156,7 @@
     }
     .contact-right form{
         height: max-content;
+        width: 90%;
     }
 .contact-right textarea {
     height: 100;
